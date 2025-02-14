@@ -53,6 +53,14 @@ We will use the following datasets for our analysis:
 - **Lidar - Washington Elevation Map**  
 
 ---
+## Tools and Software
+- Geopandas
+- xarray
+- matplotlib
+- seaborn
+- censusdata
+- contextily
+---
 
 ## Map Making Methods  
 - Use **geopandas** to filter flat land and remove national parks.  
