@@ -1,5 +1,7 @@
 # Spokane County Solar Suitability – Areeba Usman & Rose Martin  
 
+![Alt Text](https://power.larc.nasa.gov/docs/gallery/images/power_globe.gif)
+
 ## Introduction  
 This project aims to predict and classify solar potential as well as determine feasibility in Spokane. We will start by identifying flat areas of land that are at least 10 acres and are close to towns, making them easier to develop and maintain as solar farms.  
 
