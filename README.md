@@ -92,8 +92,10 @@ We will use the following datasets for our analysis:
 
 ---
 
-## Expected Outcomes  
-- 
+## Expected Outcomes 
+- A final map of Spokane County with the top three locations for solar stared.
+- A zoomed-in map of all three locations with the calculated characteristics (predicted energy generation, land cost, etc.) for each parcel of land.
+
 
 ---
 
