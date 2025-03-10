@@ -1,0 +1,8 @@
+Scaling System (1 -6)
+1 = optimal conditions for farm
+6 = bad conditions for farm
+
+
+
+use .corrsen, x - 4, y = 4, reduces the dimensions, each pixel then covers a larger area on the entire dataset
+.rio.resolution
