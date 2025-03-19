@@ -3,7 +3,11 @@
 ![NASA Power Globe](Data/power_globe.gif)
 
 ## Introduction  
-This project aims to predict and classify solar potential as well as determine feasibility in Spokane. We will start by identifying flat areas of land that are at least 10 acres and are close to towns, making them easier to develop and maintain as solar farms.  
+This project aims to identify lands that are well suited to 200 acre solar farms within Spokane County. The criteria used in the selection process included:
+    Flood plain 
+    Average solar radiation, from NASA POWER ARD, which takes into account average cloud cover. 
+    Land Use 
+    
 
 To determine solar potential, we will consider cloud cover and elevation. Feasibility will be assessed based on income, energy costs, and incentives available for solar adoption. Using this data, we will:  
 - Predict areas with high solar radiation.  
