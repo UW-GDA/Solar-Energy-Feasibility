@@ -3,17 +3,31 @@
 ![NASA Power Globe](Data/power_globe.gif)
 
 ## Introduction  
-This project aims to identify lands that are well suited to 200 acre solar farms within Spokane County. The criteria used in the selection process included:
-    Flood plain 
-    Average solar radiation, from NASA POWER ARD, which takes into account average cloud cover. 
-    Land Use 
+This project aims to identify lands that are well suited for 100 to 200 acre solar farms within Spokane County. The criteria used in the selection process included:
+    - Flood plain data
+    - Average solar radiation, from NASA POWER ARD, which takes into account average cloud cover. 
+    - Land Use Zoning
+    - Distance from the nearsest substation
     
 
-To determine solar potential, we will consider cloud cover and elevation. Feasibility will be assessed based on income, energy costs, and incentives available for solar adoption. Using this data, we will:  
-- Predict areas with high solar radiation.  
-- Classify them as **High, Medium, or Low** potential.  
-- Predict the likelihood of solar adoption for high-potential areas.  
+To determine the areas with the highest solar farm potential, we assessed the four factors from above, creating a weighted score raster that combined the different variables into a single number for each pixel. An area of 150 acres was used as the ideal farm size. All the location at which such a farm was possible was identified along with the cumulative solar score was calcualted for each location. The high scoring attributes included areas with:
+- High solar radiation.  
+- Slope of 5 degrees or lower
+- Within 5km of a substation
+- Not within a floodplain
 
+---
+
+## Datasets  
+We will use the following datasets for our analysis:  
+
+- **NASA - Prediction of Worldwide Energy Resources (POWER ARD)**  
+  - Variable: **All Sky Surface Shortwave Downward Direct Irradiance (DIR)**.  
+- **NOAA - Local Climatological Data** (`LCD_USW00024157_2024.csv`)  
+- **USGS - DEM Data**  
+- **Home Facts - UV Map**  
+- **Lidar - Washington Elevation Map**
+  
 ---
 
 ## Problem Statement / Objectives  
@@ -21,7 +35,8 @@ To identify areas within Spokane suitable for a shared, residential solar farm, 
 
 ### **Solar Irradiance**  
 - Ideal locations receive **4–6 peak sun hours per day**.  
-- High **Direct Normal Irradiance (DNI)** is preferred for solar farms.  
+- High **Direct Normal Irradiance (DNI)** is preferred for solar farms.
+- Our data computes a binary raster, showing the average total solar exposure over the course of the most recent year - 2024. This will explain why the range of radiatiom is from 0.48 to 0.498.  
 
 ### **Geographic Features**  
 - Typically, lower elevation sites with stable weather conditions are preferred.  
@@ -32,8 +47,8 @@ To identify areas within Spokane suitable for a shared, residential solar farm, 
 - Land clearing may be necessary, but environmental impact assessments should be conducted.  
 
 ### **Minimum Land Requirements**  
-- **Community-scale solar farm**: ~5–10 acres per MW.  
-- **Utility-scale solar farm**: 50+ acres for multiple MW capacity.  
+- **Minimum 150 acres of land**
+- The land must not be in a flood zone, maintain close proximity to a substation,   
 
 ### **Proximity to Infrastructure**  
 - Close to **existing power lines and substations** to reduce transmission losses and costs.  
@@ -46,15 +61,7 @@ To identify areas within Spokane suitable for a shared, residential solar farm, 
 
 ---
 
-## Datasets  
-We will use the following datasets for our analysis:  
-
-- **NASA - Prediction of Worldwide Energy Resources (POWER ARD)**  
-  - Variable: **All Sky Surface Shortwave Downward Direct Irradiance (DIR)**.  
-- **NOAA - Local Climatological Data** (`LCD_USW00024157_2024.csv`)  
-- **USGS - DEM Data**  
-- **Home Facts - UV Map**  
-- **Lidar - Washington Elevation Map**  
+ 
 
 ---
 ## Tools and Software
@@ -95,7 +102,7 @@ We will use the following datasets for our analysis:
 ## Goals  
 
 ### **Main Goals**  
-- **Map solar radiation predictions**, considering cloud cover and elevation.  
+- **Map Variable Inputes solar radiation predictions**, considering cloud cover and elevation.  
 - **Classify areas as High, Medium, or Low potential** for feasibility analysis.  
 - **Predict feasibility** in high-potential areas based on socio-economic factors.  
 
