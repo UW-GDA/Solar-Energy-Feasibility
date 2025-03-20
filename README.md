@@ -74,8 +74,8 @@ To identify areas within Spokane suitable for a shared, residential solar farm, 
 ---
 
 ## Map Making Methods  
-- Use **geopandas** to filter flat land and remove national parks.  
-- Use **if/else conditional statements** to categorize potential into **Low, Medium, and High**.  
+- Convert all data to raster and merge into XdArray dataframe
+- Classify 
 
 ---
 
