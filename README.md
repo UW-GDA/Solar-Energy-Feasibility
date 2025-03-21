@@ -24,7 +24,9 @@ We used the following datasets for our analysis:
   - Variable: **All Sky Surface Shortwave Downward Direct Irradiance (DIR)**
   - Takes the total exposure for each given day and creates a percentage for each year per pixel.
 - **ESA Land Cover Data**
-  - Exported from **ArcGIS Pro** 
+  - Exported from **ArcGIS Pro**
+- **FEMA Flood Zone Data**
+  - Exported from **ArcGIS Pro**
 - **DEM WA COP90 Data** & **Census Data** provided from class
 
 ---
