@@ -25,7 +25,7 @@ We used the following datasets for our analysis:
   - Takes the total exposure for each given day and creates a percentage for each year per pixel.
 - **ESA Land Cover Data**
   - Exported from **ArcGIS Pro** 
-- **DEM WA COP90 Data** provided from class
+- **DEM WA COP90 Data** & **Census Data** provided from class
 
 ---
 
@@ -102,7 +102,7 @@ To identify areas within Spokane suitable for a shared, residential solar farm, 
 ## Goals  
 
 ### **Main Goals**  
-- **Map solar radiation predictions** considering cloud cover and elevation  
+- **Map solar radiation predictions** considering land usage, substation proximity, and elevation, while ensuring no disruption to those currently living there. 
 - **Classify areas as High, Medium, or Low potential** for net score and possible location identification
 - Identify **large exposed land** close to towns for potential solar farm development 
 
