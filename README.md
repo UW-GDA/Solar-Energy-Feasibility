@@ -103,7 +103,7 @@ To identify areas within Spokane suitable for a shared, residential solar farm, 
 
 ### **Main Goals**  
 - **Map solar radiation predictions** considering cloud cover and elevation  
-- **Classify areas as High, Medium, or Low potential** for feasibility analysis
+- **Classify areas as High, Medium, or Low potential** for net score and possible location identification
 - Identify **large exposed land** close to towns for potential solar farm development 
 
 ### **Lower Priority Goal**  
